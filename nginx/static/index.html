@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Example</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/plotly-latest.min.js"></script>
+    <!--formden.js communicates with FormDen server to validate fields and submit via AJAX -->
+    <script type="text/javascript" src="formden.js"></script>
+
+    <!-- Special version of Bootstrap that is isolated to content wrapped in .bootstrap-iso -->
+    <link rel="stylesheet" href="lib/bootstrap-iso.css" />
+
+    <!--Font Awesome (added because you use icons in your prepend/append)-->
+    <link rel="stylesheet" href="lib/font-awesome.min.css" />
+    <!-- Extra JavaScript/CSS added manually in "Settings" tab -->
+    <!-- Include jQuery -->
+    <!-- ALREADY included <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script> -->
+
+    <!-- Include Date Range Picker -->
+    <script type="text/javascript" src="lib/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap-datepicker3.css" />
+
+    <!-- Inline CSS based on choices in "Settings" tab -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="container-fluid" id="menuNav">
+                <div class="lienMenu"><a href="index.html">Fake Timeserie</a></div>
+                <div class="lienMenu"><a href="spectrogram.html">Spectrogram</a></div>
+                <div class="lienMenu"><a href="ml.html">Machine Learning</a></div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>EBDO PROJECT</h1>
+    </div>
+    <br>
+    <div class="container">
+        <h2>Fake Time Series</h2>
+    </div>
+    <br>
+    <br>
+    <div class="container" id="myDiv" style="width:1000px;height:600px;"></div>
+    <br>
+    <br>
+    <!-- HTML Form (wrapped in a .bootstrap-iso div) -->
+    <form class="" action="index.html" method="post">
+        <fieldset>
+            <legend> choose timestamp </legend>
+            <div class="container" id="div1">
+                <div class="row">
+                    <div class="col-sm-3">
+                        From Date:
+                        <input type="date" name="fromdate" id="from" value="">
+                    </div>
+
+                    <div class="col-sm-1">
+                    </div>
+
+                    <div class="col-sm-3">
+                        to Date :
+                        <input type="date" name="todate" id="to" value="">
+                    </div>
+                    <div class="col-sm-1">
+                    </div>
+                    <div class="col-sm-3">
+                        step :
+                        <select class="" name="" id="ste">
+                  <option value="sec">second</option>
+                  <option value="minute">minute</option>
+                  <option value="hour"selected>hour</option>
+                  <option value="day">day</option>
+                </select>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+    <div class="container" id="myDiv2">
+        <div class="row">
+            <div class="col-sm-2" id="col1"></div>
+            <div class="col-sm-2" id="col2"></div>
+            <div class="col-sm-2" id="col3"></div>
+        </div>
+    </div>
+    <button type="button" class="btn btn-primary btn-sm" onclick="fsPlot()">Plot !</button>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+.bootstrap-iso .formden_header h2,
+.bootstrap-iso .formden_header p,
+.bootstrap-iso form {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black
+}
+
+.bootstrap-iso form button,
+.bootstrap-iso form button:hover {
+    color: white !important;
+}
+
+a {
+    color: #555;
+}
+
+button {
+    position: relative;
+    margin-top: 50px;
+    left: 45%;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-around;
+    margin-bottom: 4em;
+    border-bottom: solid 2px black;
+}
+
+nav {
+    margin-top: 15px;
+    width: 100%;
+    height: 5%;
+    color: #3366FF;
+}
+
+#menuNav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.asteriskField {
+    color: red;
+}
