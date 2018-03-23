@@ -1,4 +1,4 @@
-# EDO Nginx Dockerfile
+# ODE Nginx Dockerfile
 # Copyright (C) 2017 Project-EBDO
 
 # author: Alexandre Degurse

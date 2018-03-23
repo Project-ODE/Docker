@@ -1,4 +1,4 @@
-# EDO FeatureEngine Dockerfile
+# ODE FeatureEngine Dockerfile
 # Copyright (C) 2017 Project-EBDO
 
 # author: Alexandre Degurse

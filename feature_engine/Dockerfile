@@ -1,4 +1,4 @@
-# EDO Scala and sbt Dockerfile
+# ODE Scala and sbt Dockerfile
 # Copyright (C) 2017 Project-EBDO
 
 # author: Alexandre Degurse
