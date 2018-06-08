@@ -41,6 +41,24 @@ See [the docker official installation documentation](https://docs.docker.com/ins
 and [the docker-compose official installation documentation](https://docs.docker.com/documentation/compose/install/#install-compose)
 for more information.
 
+#### Centos
+
+Docker should be installed by using docker's repository.
+Run the following commands to install docker-ce and docker compose :
+```bash
+sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+sudo yum install docker-ce
+
+sudo curl -L https://github.com/docker/compose/releases/download/1.20.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+```
+
+See [the docker official installation documentation for centos](https://docs.docker.com/install/linux/docker-ce/centos/)
+and [the docker-compose official installation documentation](https://docs.docker.com/documentation/compose/install/#install-compose)
+for more information.
+
+
 ### Run the platform
 
 First, get this code by cloning or downloading this repository. Then, move into its main folder.
