@@ -57,6 +57,8 @@ docker-compose up <service>
 
 Initial set-up for FeatureService will be slow as default config is to run seeding that downloads a lot of files, when re-running the container it will skip files it has already downloaded.
 
+You can change which branch or repo is used by modifying the .env file.
+
 *Note: some services depends on other services to work*
 
 ### Running on a server
@@ -76,6 +78,10 @@ https-portal:
     DOMAINS: aplose.osmose.xyz -> http://dockerhost:5000, api.osmose.ixio.xyz -> http://dockerhost:7231
     STAGE: 'production'
 ```
+
+#### Demo update script: update-demo.sh
+
+The update-demo.sh script is meant to be used with a crontab to keep an up-to-date demo on the web and / or a staging environment. It records in a html comment on FrontApp the different commits used so that advanced users can know what is deployed exactly.
 
 ### Use custom FeatureService seeding
 
